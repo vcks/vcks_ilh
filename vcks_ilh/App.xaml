@@ -1,0 +1,109 @@
+﻿<Application x:Class="vcks_ilh.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:vcks_ilh"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <SolidColorBrush x:Key="Indigo900">
+            <SolidColorBrush.Color>
+                <Color >#1a237e</Color>
+            </SolidColorBrush.Color>
+        </SolidColorBrush>
+        
+        <SolidColorBrush x:Key="Indigo700">
+            <SolidColorBrush.Color>
+                <Color >#303f9f</Color>
+            </SolidColorBrush.Color>
+        </SolidColorBrush>
+
+        <SolidColorBrush x:Key="Indigo500">
+            <SolidColorBrush.Color>
+                <Color >#3f51b5</Color>
+            </SolidColorBrush.Color>
+        </SolidColorBrush>
+
+        <SolidColorBrush x:Key="Indigo100">
+            <SolidColorBrush.Color>
+                <Color >#c5cae9</Color>
+            </SolidColorBrush.Color>
+        </SolidColorBrush>
+        
+        <SolidColorBrush x:Key="Brown">
+            <SolidColorBrush.Color>
+                <Color>#340e08</Color>
+            </SolidColorBrush.Color>
+        </SolidColorBrush>
+
+        <SolidColorBrush x:Key="VisualStudioGray">
+            <SolidColorBrush.Color>
+                <Color>#333333</Color>
+            </SolidColorBrush.Color>
+        </SolidColorBrush>
+
+        <SolidColorBrush x:Key="VisualStudioDarkGray">
+            <SolidColorBrush.Color>
+                <Color>#222222</Color>
+            </SolidColorBrush.Color>
+        </SolidColorBrush>
+
+        <Style  x:Key="SpFlatButtonGray" TargetType="StackPanel">           
+            <Style.Setters>
+                <Setter Property="Effect">
+                    <Setter.Value>
+                        <DropShadowEffect BlurRadius="1"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Background" Value="{StaticResource VisualStudioGray}"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" Value="{StaticResource VisualStudioDarkGray}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        
+        <Style  x:Key="FlatButtonGray" TargetType="Grid">
+            <Style.Setters>
+                <Setter Property="Background" Value="{StaticResource VisualStudioGray}"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" Value="{StaticResource VisualStudioDarkGray}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style  x:Key="FlatButtonIndigo500" TargetType="Grid">
+            <Style.Setters>
+                <Setter Property="Background" Value="{StaticResource Indigo500}"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" Value="{StaticResource Indigo700}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style  x:Key="FlatButtonIndigo700" TargetType="Grid">
+            <Style.Setters>
+                <Setter Property="Background" Value="{StaticResource Indigo700}"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" Value="{StaticResource Indigo900}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+
+        <Style x:Key="Symbola">
+                <Setter Property="TextElement.FontFamily" Value="pack://application:,,,/resources/#Symbola"/>
+        </Style>
+
+        <Style x:Key="Segoe UI">
+            <Setter Property="TextElement.FontFamily" Value="pack://application:,,,/resources/#Segoe UI"/>
+        </Style>
+
+    </Application.Resources>
+</Application>

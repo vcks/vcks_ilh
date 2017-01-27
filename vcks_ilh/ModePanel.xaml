@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="vcks_ilh.ModePanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:vcks_ilh" 
+             mc:Ignorable="d" Background="{StaticResource Indigo500}"
+             >
+    <UserControl.Resources>
+        <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource Symbola}">
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical"  VerticalAlignment="Top">
+
+                <Grid x:Name="Note1" Height="52" Style="{StaticResource FlatButtonIndigo500}" MouseLeftButtonUp="Note_MouseLeftButtonUp" IsEnabled="False">
+                    <TextBlock Foreground="White" FontSize="40" TextAlignment="Center" VerticalAlignment="Top" Text="𝅝"/>
+                </Grid>
+                
+                <Grid x:Name="Note2" Height="52" Style="{StaticResource FlatButtonIndigo500}" MouseLeftButtonUp="Note_MouseLeftButtonUp">
+                    <TextBlock Foreground="White" FontSize="40" TextAlignment="Center" VerticalAlignment="Top" Text="𝅗𝅥"/>
+                </Grid>
+
+                <Grid x:Name="Note4" Height="52" Style="{StaticResource FlatButtonIndigo500}" MouseLeftButtonUp="Note_MouseLeftButtonUp">
+                    <TextBlock Foreground="White" FontSize="40" TextAlignment="Center" VerticalAlignment="Top" Text="𝅘𝅥"/>
+                </Grid>
+
+                <Grid x:Name="Note8" Height="52"  Style="{StaticResource FlatButtonIndigo500}" MouseLeftButtonUp="Note_MouseLeftButtonUp">
+                    <TextBlock Foreground="White" FontSize="40" TextAlignment="Center" VerticalAlignment="Top" Text="𝅘𝅥𝅮"/>
+                </Grid>
+
+            </StackPanel>
+
+            <Separator Background="White"></Separator>
+
+            <StackPanel Orientation="Vertical"  VerticalAlignment="Top">
+                <Grid x:Name="Dot" Height="52"  Style="{StaticResource FlatButtonIndigo500}" MouseLeftButtonUp="Dot_MouseLeftButtonUp">
+                    <TextBlock Foreground="White" FontSize="20" Style="{StaticResource Segoe UI}" TextAlignment="Center" VerticalAlignment="Center" Text="Точка"/>
+                </Grid>
+            </StackPanel>
+
+            <Separator Background="White"></Separator>
+            
+            <StackPanel Orientation="Vertical"  VerticalAlignment="Top">
+                <Grid x:Name="Rest1" Height="52" Style="{StaticResource FlatButtonIndigo500}" MouseLeftButtonUp="Rest_MouseLeftButtonUp" IsEnabled="False">
+                    <TextBlock Foreground="White" FontSize="40" TextAlignment="Center" VerticalAlignment="Top" Text="𝄻"/>
+                </Grid>
+
+                <Grid x:Name="Rest2" Height="52" Style="{StaticResource FlatButtonIndigo500}" MouseLeftButtonUp="Rest_MouseLeftButtonUp">
+                    <TextBlock Foreground="White" FontSize="40" TextAlignment="Center" VerticalAlignment="Top" Text="𝄼"/>
+                </Grid>
+
+                <Grid x:Name="Rest4" Height="52" Style="{StaticResource FlatButtonIndigo500}" MouseLeftButtonUp="Rest_MouseLeftButtonUp">
+                    <TextBlock Foreground="White" FontSize="40" TextAlignment="Center" VerticalAlignment="Top" Text="𝄽"/>
+                </Grid>
+
+                <Grid x:Name="Rest8" Height="52"  Style="{StaticResource FlatButtonIndigo500}" MouseLeftButtonUp="Rest_MouseLeftButtonUp">
+                    <TextBlock Foreground="White" FontSize="40" TextAlignment="Center" VerticalAlignment="Top" Text="𝄾"/>
+                </Grid>
+            </StackPanel>
+
+            <Separator Background="White"></Separator>
+
+                <Grid  HorizontalAlignment="Stretch" VerticalAlignment="Top">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0" Style="{StaticResource FlatButtonIndigo500}" MouseLeftButtonUp="ButtonPageDown_Click">
+                        <TextBlock FontSize="25" Text="⊲" VerticalAlignment="Center" Padding="0,0,0,2" Foreground="White" HorizontalAlignment="Center"/>
+                </Grid>
+
+                <TextBlock Grid.Column="1" x:Name="TextBlockPage" Style="{StaticResource Segoe UI}"  Padding="0,0,0,4" FontSize="20" Foreground="White" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" TextAlignment="Center" Width="30" Text="0"/>
+
+                <Grid Grid.Column="2" Style="{StaticResource FlatButtonIndigo500}" MouseLeftButtonUp="ButtonPageUp_Click">
+                       <TextBlock FontSize="25" Text="⊳" VerticalAlignment="Center" Padding="0,0,0,2" Foreground="White" HorizontalAlignment="Center"/>
+                </Grid>
+            </Grid>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

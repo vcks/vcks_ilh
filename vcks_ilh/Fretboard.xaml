@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="vcks_ilh.Fretboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:vcks_ilh"
+             mc:Ignorable="d" 
+             d:DesignHeight="88"  MaxHeight="88" MinHeight="88" HorizontalContentAlignment="Left" VerticalContentAlignment="Top">
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0" Margin="0,0,10,0" Source="Resources/03.png" MouseLeftButtonDown= "Image_MouseLeftButtonDown" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Image.Effect><DropShadowEffect BlurRadius="10"/></Image.Effect>
+        </Image>
+        
+        <Ellipse x:Name="FirstStringDot" Visibility="Hidden" Stroke="White" Margin="950,2,0,0" Width="25" Height="25" Fill="{StaticResource Indigo500}" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Ellipse.Effect><DropShadowEffect BlurRadius="1"/></Ellipse.Effect>
+        </Ellipse>
+
+        <Ellipse x:Name="SecondStringDot" Visibility="Hidden" Stroke="White" Margin="950,0,0,3" Width="25" Height="25" Fill="{StaticResource Indigo500}" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+            <Ellipse.Effect><DropShadowEffect BlurRadius="1"/></Ellipse.Effect>
+        </Ellipse>
+        
+        <Grid Grid.Column="1" Height="88" MaxHeight="88" MinHeight="88" Width="88" MaxWidth="88" MinWidth="88" Background="{StaticResource Indigo500}">
+            <local:VcksButton x:Name="FirstString" Background="{StaticResource Brown}" Margin="9,5,0,0" Width="30" Height="30" Click="FirstString_Click" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <local:VcksButton.Effect><DropShadowEffect BlurRadius="3" Opacity="1.0"/></local:VcksButton.Effect>
+            </local:VcksButton>
+            <local:VcksButton x:Name="SecondString" Background="{StaticResource Brown}" Margin="9,0,0,5" Width="30" Height="30" Click="SecondString_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <local:VcksButton.Effect><DropShadowEffect BlurRadius="3" Opacity="1.0"/></local:VcksButton.Effect>
+            </local:VcksButton>
+            <local:VcksButton x:Name="BothString" Background="{StaticResource Brown}" Margin="49,5,0,5"  Width="30" Height="78" HorizontalAlignment="Left" Click="BothString_Click">
+                <local:VcksButton.Effect><DropShadowEffect BlurRadius="3" Opacity="1.0"/></local:VcksButton.Effect>
+            </local:VcksButton>
+            
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="10"></DropShadowEffect>
+            </Grid.Effect>
+        </Grid>
+    </Grid>
+
+</UserControl>

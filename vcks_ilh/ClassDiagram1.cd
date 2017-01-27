@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="vcks_ilh.VcksButton">
+    <Position X="15.5" Y="14.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAEAAAgAAAAAAAAAEAAEAAAAAgAAAAAAAAgA=</HashCode>
+      <FileName>VcksButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vcks_ilh.Symbols">
+    <Position X="1.75" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAABwgACABAAiCCBAACAQACAEIABAiCAABIAAAQAAA=</HashCode>
+      <FileName>Symbols.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vcks_ilh.Song">
+    <Position X="1.75" Y="0.75" Width="2.25" />
+    <NestedTypes>
+      <Delegate Name="vcks_ilh.Song.ChangedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Song.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAIABQAAAAAgABAMAAIAAACAAAACAAAQAAAAIgAA=</HashCode>
+      <FileName>Song.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vcks_ilh.Serializer">
+    <Position X="15.5" Y="13.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vcks_ilh.Rest">
+    <Position X="4.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vcks_ilh.Player">
+    <Position X="15.5" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAGAAAAAAAIgAAAAKAAAAAAEAACACAgwAAAQCIAAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vcks_ilh.Note">
+    <Position X="6" Y="5" Width="2" />
+    <NestedTypes>
+      <Enum Name="vcks_ilh.Note.Accidentals" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Note.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAACAAAEAAACAAgAIAAIAAAAAAAAASACAAE=</HashCode>
+      <FileName>Note.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vcks_ilh.MusicalObject">
+    <Position X="4.25" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAACAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MusicalObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vcks_ilh.Music">
+    <Position X="4.25" Y="0.75" Width="2" />
+    <NestedTypes>
+      <Class Name="vcks_ilh.Music.Durations" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Music.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="vcks_ilh.Music.TimeSignatures" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Music.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAIAAAAAgACAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Music.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vcks_ilh.SheetWindow" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="0.75" Width="4" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="vcks_ilh.SheetWindow.BD">
+        <TypeIdentifier>
+          <NewMemberFileName>BD.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="vcks_ilh.SheetWindow.NewPageCreatedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SheetWindow.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BEEYUAIAgwIDQAIBABaFAMKFCARAh2JIBASBEgwMg0g=</HashCode>
+      <FileName>BD.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="vcks_ilh.Bar">
+    <Position X="6.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAACAAACAAAAAIACQAAACAAAA=</HashCode>
+      <FileName>Bar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vcks_ilh.Fretboard">
+    <Position X="12.75" Y="9.75" Width="2.5" />
+    <NestedTypes>
+      <Delegate Name="vcks_ilh.Fretboard.FretboardClickedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Fretboard.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="vcks_ilh.Fretboard.FretAndStringClickedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Fretboard.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="vcks_ilh.Fretboard.NoteEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Fretboard.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQIACAAApQAAACCIAEAAAJQAAAaAAAEAAAAEBECAAAA=</HashCode>
+      <FileName>Fretboard.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="vcks_ilh.ChangeTemp">
+    <Position X="15.25" Y="5.25" Width="2.25" />
+    <NestedTypes>
+      <Delegate Name="vcks_ilh.ChangeTemp.TempChangedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ChangeTemp.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAEAQAAAEAAAAAAAAAAAAAAAAIAAAAAAQ=</HashCode>
+      <FileName>ChangeTemp.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="vcks_ilh.Create">
+    <Position X="12.75" Y="5.25" Width="2.25" />
+    <NestedTypes>
+      <Delegate Name="vcks_ilh.Create.SongCreatedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Create.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEgAAAAAAEAAEAAAAACAIAAAgAAAAAAAIAAAQCAQ=</HashCode>
+      <FileName>Create.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="vcks_ilh.MainWindow">
+    <Position X="12.75" Y="0.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAwAAAAAQAggAAAAAMAAABAAAAAAAAACQ=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="vcks_ilh.ModePanel">
+    <Position X="12.75" Y="14.75" Width="2.25" />
+    <NestedTypes>
+      <Delegate Name="vcks_ilh.ModePanel.RestEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ModePanel.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="vcks_ilh.ModePanel.PageEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ModePanel.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="vcks_ilh.ModePanel.Response" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ModePanel.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAFMAAAIAAAAACAAAAAAAAAIAAAAgCAAfAAAAAAA=</HashCode>
+      <FileName>ModePanel.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
